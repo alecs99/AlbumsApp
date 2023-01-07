@@ -3,11 +3,11 @@ package com.cloud.albums.service;
 import com.cloud.albums.model.Album;
 import com.cloud.albums.model.Artist;
 import com.cloud.albums.repository.AlbumRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
 @Service
