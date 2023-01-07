@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  database:
+    build: database
+    ports:
+      - "33061:3306"
+    command: --init-file /data/application/init.sql
+    volumes:
+      - ./database/init.sql:/data/application/init.sql
+    environment:
+      MYSQL_ROOT_USER: user1
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: user1
+      MYSQL_PASSWORD: secret
