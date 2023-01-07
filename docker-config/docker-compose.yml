@@ -9,8 +9,8 @@ services:
     volumes:
       - ./database/init.sql:/data/application/init.sql
     environment:
-      MYSQL_ROOT_USER: user1
+      MYSQL_ROOT_USER: root
       MYSQL_ROOT_PASSWORD: secret
       MYSQL_DATABASE: homestead
-      MYSQL_USER: user1
-      MYSQL_PASSWORD: secret
+      MYSQL_USER: userApi
+      MYSQL_PASSWORD: 12345678
